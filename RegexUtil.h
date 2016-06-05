@@ -19,7 +19,7 @@ typedef enum : NSUInteger {
 
 #define kEmailRegex     @"^\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*.\\w+([-.]\\w+)*$"
 #define kDigit          @"^[0-9]+$"
-#define kMoney          @"^[1-9]{1}[0-9]*([.]{1}[0-9]{1,2})?|[0]{1}([.]{1}[0-9]{1,2})?$" //100.99
+#define kMoney          @"^[0-9]+(.[0-9]{2})?$" //100.99
 #define kID             @"^(\\d{15})|(\\d{18})|(\\d{17}(\\d|X|x))$" // only check format(15 or 18 numbers),not real
 #define kPassword       @"^[a-zA-Z0-9]\\w{6,20}$"
 #define kPhone          @"^1[3|4|5|7|8]\\d{9}$"
